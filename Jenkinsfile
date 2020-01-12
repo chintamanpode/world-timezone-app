@@ -11,8 +11,7 @@ pipeline{
 					sh 'mvn package deploy -DmuleDeploy'
 				}
 			}					
-		}	
-			
+		}				
 }
 
 	
