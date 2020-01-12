@@ -13,6 +13,6 @@ http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/fil
 	<flow name="world-timezone-appFlow" doc:id="dd8f1980-587c-411e-b74e-48870698d870" >
 		<http:listener doc:name="Listener" doc:id="699118c1-b20d-48a7-ae88-31d8e1742d4c" path="/cicd" config-ref="HTTP_Listener_config"/>
 		<set-payload value="${http.port}" doc:name="Set Payload" doc:id="f74fc295-1450-4980-ac4a-63b9b9430554" />
-		<logger level="INFO" doc:name="Logger - jenkins - added" doc:id="8576f925-34e1-45c7-a7c2-8aae2a3ab585" message="${http.port}"/>
+		<logger level="INFO" doc:name="Logger - jenkins - added" doc:id="8576f925-34e1-45c7-a7c2-8aae2a3ab585" message="${http.port} - my port"/>
 	</flow>
 </mule>
