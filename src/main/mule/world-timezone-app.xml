@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/fil
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="ed300974-0ec7-43ce-899c-9cbb26cbbdce" >
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
+	<configuration-properties doc:name="Configuration properties" doc:id="2d55aa90-1dbb-44ba-9a99-3b87ac7d859c" file="dev.yaml" />
 	<flow name="world-timezone-appFlow" doc:id="dd8f1980-587c-411e-b74e-48870698d870" >
 		<http:listener doc:name="Listener" doc:id="699118c1-b20d-48a7-ae88-31d8e1742d4c" path="/cicd" config-ref="HTTP_Listener_config"/>
 		<set-payload value="${http.port}" doc:name="Set Payload" doc:id="f74fc295-1450-4980-ac4a-63b9b9430554" />
