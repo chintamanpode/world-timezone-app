@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:os="http://www.mulesoft.org/schema/mule/os" xmlns:http="http://www.mulesoft.org/schema/mule/http"
-	xmlns="http://www.mulesoft.org/schema/mule/core"
-	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:os="http://www.mulesoft.org/schema/mule/os"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
-http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd">
-	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="ec72f57f-d510-4e63-828d-b17568333aa7" >
-		<http:listener-connection host="0.0.0.0" port="8083" />
-	</http:listener-config>
-	<flow name="world-timezone-appFlow" doc:id="b5e28c7f-97d9-47a7-8157-34c86062d765" >
-		<http:listener doc:name="Listener" doc:id="5500fdec-9dc2-4e56-8a20-072e232db54a" config-ref="HTTP_Listener_config" path="/git"/>
-		<set-payload value="7" doc:name="Set Payload" doc:id="e4efb9b3-d1b9-4f4c-a2db-556e8400808e" />
-		<logger level="INFO" doc:name="Logger" doc:id="8e5dd8bb-4a4e-4f51-967d-66a9cc629490" message="fifth change Draft"/>
+http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+	<flow name="world-timezone-appFlow" doc:id="dd8f1980-587c-411e-b74e-48870698d870" >
+		<logger level="INFO" doc:name="Logger" doc:id="8576f925-34e1-45c7-a7c2-8aae2a3ab585" message="test-test"/>
 	</flow>
 </mule>
