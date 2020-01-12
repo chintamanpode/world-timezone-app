@@ -26,12 +26,12 @@
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
-					<username>cpode707</username>
-					<password>Start!234</password>				
+					<username>cpodemule</username>
+					<password>MiddWareMule1</password>				
 					<environment>Sandbox</environment>
 					<workers>1</workers>
 					<workerType>Micro</workerType>
-					<applicationName>worldtimezone-service</applicationName>
+					<applicationName>hds-worldtimezone-service</applicationName>
 					<muleVersion>4.1.6</muleVersion>
 				</cloudHubDeployment>
 				</configuration>
