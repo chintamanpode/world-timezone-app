@@ -28,7 +28,7 @@
 				<cloudHubDeployment>
 					<username>cpodemule</username>
 					<password>MiddWareMule1</password>				
-					<environment>Sandbox</environment>
+					<environment>Dev</environment>
 					<workers>1</workers>
 					<workerType>Micro</workerType>
 					<applicationName>hds-worldtimezone-service</applicationName>
