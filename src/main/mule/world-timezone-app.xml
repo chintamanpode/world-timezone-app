@@ -13,6 +13,5 @@ http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/cu
 		<http:listener doc:name="Listener" doc:id="5500fdec-9dc2-4e56-8a20-072e232db54a" config-ref="HTTP_Listener_config" path="/git"/>
 		<set-payload value="7" doc:name="Set Payload" doc:id="e4efb9b3-d1b9-4f4c-a2db-556e8400808e" />
 		<logger level="INFO" doc:name="Logger" doc:id="8e5dd8bb-4a4e-4f51-967d-66a9cc629490" message="fourth change Draft"/>
-		<os:store doc:name="Store" doc:id="c62b66b0-5999-4355-9aa8-6f713d46f21a" key="test" objectStore="Object_store"/>
 	</flow>
 </mule>
