@@ -31,7 +31,6 @@
 					<environment>Sandbox</environment>
 					<workers>1</workers>
 					<workerType>Micro</workerType>
-					<objectStoreV1>false</objectStoreV1>
 					<applicationName>worldtimezone-service</applicationName>
 					<muleVersion>4.2.2</muleVersion>
 				</cloudHubDeployment>
