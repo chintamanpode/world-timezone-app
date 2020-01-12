@@ -8,19 +8,9 @@ http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/cu
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="ec72f57f-d510-4e63-828d-b17568333aa7" >
 		<http:listener-connection host="0.0.0.0" port="8083" />
 	</http:listener-config>
-	<os:object-store name="Object_store" doc:name="Object store" doc:id="45ab392a-60ca-4e97-b18e-4a810d0c32d9" persistent="false" />
-	<os:config name="ObjectStore_Config" doc:name="ObjectStore Config" doc:id="6e4ab71b-667b-498a-af94-8128e4318750" >
-		<os:connection >
-			<reconnection >
-				<reconnect />
-			</reconnection>
-		</os:connection>
-	</os:config>
-	<os:object-store name="Object_store123" doc:name="Object store" doc:id="36df212d-11fb-4113-8a05-6c56029c7db2" persistent="false" config-ref="ObjectStore_Config" />
 	<flow name="world-timezone-appFlow" doc:id="b5e28c7f-97d9-47a7-8157-34c86062d765" >
 		<http:listener doc:name="Listener" doc:id="5500fdec-9dc2-4e56-8a20-072e232db54a" config-ref="HTTP_Listener_config" path="/git"/>
 		<set-payload value="7" doc:name="Set Payload" doc:id="e4efb9b3-d1b9-4f4c-a2db-556e8400808e" />
-		<logger level="INFO" doc:name="Logger" doc:id="8e5dd8bb-4a4e-4f51-967d-66a9cc629490" message="fourth change Draft"/>
-		<os:store doc:name="Store" doc:id="8f7e7128-1116-4f3c-8d2e-795ff4880f05" key="test" failOnNullValue="false" objectStore="Object_store123"/>
+		<logger level="INFO" doc:name="Logger" doc:id="8e5dd8bb-4a4e-4f51-967d-66a9cc629490" message="fifth change Draft"/>
 	</flow>
 </mule>
